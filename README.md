@@ -1,2 +1,3 @@
 # beamer-template
-Template for beamer-based presentations.
+
+Simple template for beamer-based presentations.
