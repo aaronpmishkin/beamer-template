@@ -41,6 +41,9 @@
 # latexrun
 latex.out/
 
+## Built files
+main.pdf
+
 # beamer
 *.nav
 *.pre
