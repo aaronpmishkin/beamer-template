@@ -1,32 +1,11 @@
 \documentclass[mathserif,notheorems]{beamer}
 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage[scale=2]{ccicons}
-\usepackage{appendixnumberbeamer}
-\usepackage{booktabs}
-\usepackage[toc,page]{appendix}
-\usepackage{graphicx}
-\usepackage{xspace}
-\usepackage{adjustbox, lipsum}
-\usepackage{bbm}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
-\usepackage[sort,numbers]{natbib}
-
-% absolute positioning
-\usepackage[absolute,overlay]{textpos}
-
-%% source for images.
-\newcommand{\source}[1]{{\let\thefootnote\relax\footnote{{\tiny #1}}}}
-
-\pdfstringdefDisableCommands{%
-  \def\\{}%
-  \def\texttt#1{<#1>}%
-}
-
 \input{macros/math}
 \usepackage{simplebeam}
+
+% bib resources
+
+% \addbibresource[]{}
 
 \title{}
 \author{}
@@ -35,53 +14,51 @@
 
 
 \begin{document}
-    %% TODO: Should write custom title template instead of this slide.
-    \setbeamercolor{background canvas}{bg=lightcyan}
-        \begin{frame}
-        \vspace{1em}
-        \begin{center}
-            {\Large  \vspace{1em}} %% title
+%% TODO: Should write custom title template instead of this slide.
+\setbeamercolor{background canvas}{bg=lightcyan}
+\begin{frame}
+	\vspace{1em}
+	\begin{center}
+		{\Large  \vspace{1em}} %% title
 
+			{\large  \vspace{1em} } %% subtitle
 
-            {\large  \vspace{1em} } %% subtitle
+			{\large Aaron Mishkin, \\ \texttt{amishkin@cs.stanford.edu} } %% author
+	\end{center}
 
-            {\large Aaron Mishkin, \\ \texttt{amishkin@cs.stanford.edu} } %% author
-        \end{center}
+	\vspace{2em}
 
-        \vspace{2em}
+	%% collaborators:
+	\begin{figure}
+		\centering
 
-        %% collaborators:
-        \begin{figure}
-            \centering
+	\end{figure}
 
-        \end{figure}
+\end{frame}
+\setbeamercolor{background canvas}{bg=white}
 
-    \end{frame}
-    \setbeamercolor{background canvas}{bg=white}
+%% main content starts %%
 
-    %% main content starts %%
+\begin{frame}{}
 
-    \begin{frame}{}
+\end{frame}
 
-    \end{frame}
+%% main content ends %%
 
-    %% main content ends %%
+%% end slide
+\setbeamercolor{background canvas}{bg=lightcyan}
 
-    %% end slide
-    \setbeamercolor{background canvas}{bg=lightcyan}
+\begin{frame}{}
+	\begin{center}
+		\huge Thanks for Listening!
+	\end{center}
+\end{frame}
+\setbeamercolor{background canvas}{bg=white}
 
-    \begin{frame}{}
-        \begin{center}
-        \huge Thanks for Listening!
-        \end{center}
-    \end{frame}
-    \setbeamercolor{background canvas}{bg=white}
-
-    %% bibliography
-    \begin{frame}[allowframebreaks]{References}
-        \bibliographystyle{plainnat}
-        \bibliography{refs}
-    \end{frame}
+%% bibliography
+\begin{frame}[allowframebreaks]{References}
+	\printbibliography[]
+\end{frame}
 
 
 \end{document}
